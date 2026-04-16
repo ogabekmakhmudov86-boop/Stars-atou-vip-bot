@@ -1,90 +1,56 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>ATOU Stars</title>
-
-<style>
-body {
-    margin: 0;
-    font-family: Arial;
-    background: linear-gradient(135deg,#0f0f0f,#1f1f1f);
-    color: white;
-    text-align: center;
-}
-
-h1 {
-    color: gold;
-    font-size: 40px;
-}
-
-.container {
-    padding: 30px;
-}
-
-.card {
-    background: #222;
-    margin: 15px auto;
-    padding: 20px;
-    border-radius: 15px;
-    width: 260px;
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px gold;
-}
-
-button {
-    background: gold;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.top {
-    padding: 50px;
-}
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Packages</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-<div class="top">
-    <h1>⭐ ATOU STARS</h1>
-    <p>Покупай звёзды быстро и безопасно</p>
-</div>
-
-<div class="container">
-
-<div class="card">
-<h3>⭐100</h3>
-<p>30.000 сум</p>
-<button onclick="buy(100)">Купить</button>
-</div>
-
-<div class="card">
-<h3>⭐200</h3>
-<p>60.000 сум</p>
-<button onclick="buy(200)">Купить</button>
-</div>
-
-<div class="card">
-<h3>⭐500 🔥</h3>
-<p>145.000 сум</p>
-<button onclick="buy(500)">Купить</button>
-</div>
-
-</div>
-
-<script>
-function buy(x){
-    window.open("https://t.me/your_bot_username?start=" + x);
-}
-</script>
-
+    <header>
+        <h1>Star Packages</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Purchase Star Packages</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Stars</th>
+                        <th>Price (сум)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>100</td>
+                        <td>30,000</td>
+                    </tr>
+                    <tr>
+                        <td>200</td>
+                        <td>60,000</td>
+                    </tr>
+                    <tr>
+                        <td>300</td>
+                        <td>90,000</td>
+                    </tr>
+                    <tr>
+                        <td>500</td>
+                        <td>150,000</td>
+                    </tr>
+                    <tr>
+                        <td>750</td>
+                        <td>220,000</td>
+                    </tr>
+                    <tr>
+                        <td>1000</td>
+                        <td>290,000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Star Packages</p>
+    </footer>
 </body>
 </html>
